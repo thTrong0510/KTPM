@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="600.0" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="daihocmo.coursecourseapp.PrimaryController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <RadioButton fx:id="rdoA" mnemonicParsing="false" styleClass="a" text="A" GridPane.rowIndex="2" />
+      <RadioButton fx:id="rdoB" mnemonicParsing="false" styleClass="a" text="B" GridPane.rowIndex="3" />
+      <RadioButton fx:id="rdoC" mnemonicParsing="false" styleClass="a" text="C" GridPane.rowIndex="4" />
+      <RadioButton fx:id="rdoD" mnemonicParsing="false" styleClass="a" text="D" GridPane.rowIndex="5" />
+      <Text fx:id="txtA" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Text fx:id="txtB" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Text fx:id="txtC" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Text fx:id="txtD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="nameTest" text="ENGLISH COURSE" GridPane.columnIndex="1" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="6">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#previoutHandler" text="Previous" />
+            <Button mnemonicParsing="false" onAction="#handlerEvent" text="Check" />
+            <Button mnemonicParsing="false" onAction="#nextHandler" text="Next" />
+        </buttons>
+      </ButtonBar>
+      <Text fx:id="question" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
